@@ -1,4 +1,21 @@
 from flask import Flask
+application = Flask(__name__)
+@application.route("/")
+
+
+#def index():
+#    return "Index Page"
+
+def hello_word():
+    return "Hello, World!"
+
+
+
+
+
+
+"""
+from flask import Flask
 
 # print a nice greeting.
 def say_hello():
@@ -11,6 +28,8 @@ header_text = '''
     <html>\n<head> <title>EB Flask Test</title> </head>\n<body>'''
     
 """
+
+"""
 instructions = '''
     <p><em>Hint</em>: This is a RESTful web service! Append a username
     to the URL (for example: <code>/Thelonious</code>) to say hello to
@@ -18,7 +37,7 @@ instructions = '''
 home_link = '<p><a href="/">Back</a></p>\n'
 footer_text = '</body>\n</html>'
 """
-
+"""
 
 # EB looks for an 'application' callable by default.
 application = Flask(__name__)
@@ -43,3 +62,5 @@ if __name__ == "__main__":
     # removed before deploying a production app.
     application.debug = True
     application.run()
+    
+"""
