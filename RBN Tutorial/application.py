@@ -25,7 +25,7 @@ application = Flask(__name__)
 
 
 # add a rule for the index page.
-application.add_url_rule('/', 'index', say_hello())
+#application.add_url_rule('/', 'index', say_hello())
 
 # add a rule when the page is accessed with a name appended to the site
 # URL.
